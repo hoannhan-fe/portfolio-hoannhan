@@ -4,6 +4,7 @@
   --primary-color--: #00ffff;
   --color-two--: #80ffff;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,7 @@
 }
 html {
   font-family: "Poppins";
+  scroll-behavior: smooth;
 }
 body {
   color: #fff;
@@ -86,7 +88,7 @@ body {
   height: 100%;
   object-position: center;
 }
-.home .text1{
+.home .text1 {
   color: var(--primary-color--);
 }
 .home-content {
@@ -165,7 +167,7 @@ button:hover {
   animation: sliderTop 1s ease forwards;
   animation-delay: 0.7s;
 }
-
+/* ABOUT */
 .about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -210,9 +212,88 @@ button:hover {
   font-size: 13px;
   line-height: 1.4;
   margin-bottom: 2rem;
-  display:inline-block;
+  display: inline-block;
 }
 
+/* SERVICES */
+.services {
+  color: aliceblue;
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 4rem;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 70px;
+}
+
+.sub-title span {
+  color: #f06f;
+}
+
+.container {
+  padding: 90px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+  grid-gap: 40px;
+  margin-top: 5px;
+}
+.services-list i {
+  color: var(--primary-color--);
+  font-size: 40px; 
+  transition: font-size 0.3s ease;
+}
+.services-list div {
+  background-color: transparent;
+  padding: 40px;
+  font-size: 18px;
+  font-weight: 13px;
+  border-right: 10px;
+  border-radius: 20px;
+  transition: background 0.5s, transform 0.5s;
+  box-shadow: 1px 1px 20px #0122907f, 1px 1px 40px #0053bf7f;
+}
+.services-list div {
+  font-size: 10px;
+  margin-bottom: 30px;
+}
+
+.services-list div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.services-list button {
+  text-decoration: none;
+  color: #000000;
+  font-size: 12px;
+  margin-top: 20px;
+  display: inline-block;
+  justify-content: center;
+}
+
+.read {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #0ef;
+  border-radius: 40px;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: sliderTop 1s ease forwards;
+  animation-delay: 2s;
+  font-family: "Poppins";
+  box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
 
 @keyframes sliderRight {
   0% {
