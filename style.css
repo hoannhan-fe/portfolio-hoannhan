@@ -1,10 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root{
+  --primary-color--:#00ffff;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+html {
+  font-family: "Poppins";
+}
 body {
   color: #fff;
+  background-color: #091c2a;
 }
 .header {
   position: fixed;
@@ -19,6 +28,7 @@ body {
   align-items: center;
   z-index: 100;
   background-color: #0a0f2c;
+  text-transform: uppercase;
 }
 .logo {
   position: relative;
@@ -36,30 +46,87 @@ body {
   margin-left: 35px;
   transition: 0.3s;
 }
-.navbar a:hover{
-    color: aqua;
+.navbar a:hover {
+  color: var(--primary-color--);
 }
-.home{
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-    background: url(./Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 70px 10% 0;
+.home {
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+  max-width: 1200px;
+  justify-content: space-between;
+  margin: auto;
 }
-.home-content{
-    max-width: 600px;
+.img {
+  width: 100%;
 }
-.home-content h3{
-    font-size: 32px;
-    font-weight: 700;
+.home-img {
+  width: 70vh;
+  height: 70vh;
+  border: 10px solid var(--primary-color--);
+  margin-left: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  transform: translateY(25px);
+  transition: 0.5s;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.3),
+    0 0 100px rgba(0, 255, 255, 0.2);
 }
-.home-content h1{
-    font-size: 50px;
-    font-weight: 700;
-    margin: -3px 0;
+.home-img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.home-content {
+  max-width: 50%;
+  margin-right: 200px;
+  margin-top: 70px;
+}
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.home-content h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: -3px 0;
+}
+.home-content p {
+  font-size: 15px;
+}
+.home button{
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+  border: 1px solid var(--primary-color--);
+  background: transparent;
+  color: white;
+  border-radius: 18px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.home button:hover{
+  background: var(--primary-color--);
+  cursor: pointer;
+  color: #000;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3), 0 0 50px rgba(0, 255, 255, 0.2),
+    0 0 100px rgba(0, 255, 255, 0.1);
+}
+.home-social a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid var(--primary-color--);
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--primary-color--);
+  text-decoration: none;
+  margin: 30px 15px 30px 0;
 }
