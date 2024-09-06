@@ -86,7 +86,9 @@ body {
   height: 100%;
   object-position: center;
 }
-
+.home .text1{
+  color: var(--primary-color--);
+}
 .home-content {
   max-width: 50%;
   margin-right: 200px;
