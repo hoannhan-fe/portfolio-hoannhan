@@ -8,11 +8,10 @@ const typed = new Typed('.text1', {
 
   function showHide() {
     const moreText = document.getElementById("more-text");
-    const button = document.querySelector("button");
+    const button = document.querySelector("button2");
     
     if (moreText.style.display === "none") {
         moreText.style.display = "inline";
-        button.innerHTML = "<b>Less About Me</b>";
     } else {
         moreText.style.display = "none";
         button.innerHTML = "<b>More About Me</b>";
