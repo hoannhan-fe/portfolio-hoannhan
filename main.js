@@ -30,3 +30,7 @@ ScrollReveal({
   ScrollReveal().reveal('.home-content, .header', { origin: 'top' });
   ScrollReveal().reveal('.home-img , .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
   
+
+  function showAlert() {
+    alert("Contact me! Zalo/Call : 0988954542");
+  }
