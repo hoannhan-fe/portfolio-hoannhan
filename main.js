@@ -1,4 +1,4 @@
-var typed = new Typed('.text1', {
+const typed = new Typed('.text1', {
     strings: ["Frontend Development ", "Web Developer"],
     typeSpeed: 50,
     backSpeed: 50,
@@ -7,8 +7,8 @@ var typed = new Typed('.text1', {
   });
 
   function showHide() {
-    var moreText = document.getElementById("more-text");
-    var button = document.querySelector("button");
+    const moreText = document.getElementById("more-text");
+    const button = document.querySelector("button");
     
     if (moreText.style.display === "none") {
         moreText.style.display = "inline";
@@ -18,3 +18,15 @@ var typed = new Typed('.text1', {
         button.innerHTML = "<b>More About Me</b>";
     }
 }
+
+/*==================== scroll reveal ====================*/
+ScrollReveal({
+    reset: true,
+    distance: '100px',
+    duration: 2000,
+    delay: 200
+  });
+  
+  ScrollReveal().reveal('.home-content, .header', { origin: 'top' });
+  ScrollReveal().reveal('.home-img , .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+  

@@ -69,6 +69,15 @@ body {
 .img {
   width: 100%;
 }
+.reveal {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+}
+
 .home-img {
   width: 70vh;
   height: 70vh;
@@ -77,10 +86,23 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto;
+  opacity: 1;
   transform: translateY(25px);
   transition: 0.5s;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.3),
     0 0 100px rgba(0, 255, 255, 0.2);
+  animation: moveThumbnail 5s ease-in-out infinite;
+}
+@keyframes moveThumbnail {
+  0% {
+    transform: translateY(10px); /* Bắt đầu di chuyển từ 30px phía dưới */
+  }
+  50% {
+    transform: translateY(0); /* Di chuyển lên vị trí ban đầu */
+  }
+  100% {
+    transform: translateY(10px); /* Quay lại vị trí bắt đầu */
+  }
 }
 .home-img img {
   object-fit: cover;
@@ -191,6 +213,7 @@ button:hover {
   transition: 0.5s;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 255, 0.3),
     0 0 100px rgba(0, 255, 255, 0.2);
+    
 }
 .about-img img {
   width: 100%;
@@ -234,10 +257,10 @@ button:hover {
   padding-bottom: 10px;
 }
 
-.sub-title span  {
+.sub-title span {
   color: #f06f;
 }
-.sub-title1 span  {
+.sub-title1 span {
   color: #f06f;
 }
 
@@ -498,7 +521,7 @@ button:hover {
 
 @keyframes animate-path1 {
   100% {
-    stroke-dashoffset:251;
+    stroke-dashoffset: 251;
   }
 }
 
