@@ -12,7 +12,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="hide-scrollbar">
     <header class="header">
       <a href="a" class="logo">Portfolio</a>
       <div class="navbar">
@@ -20,8 +20,8 @@
         <a href="#about" style="--i: 2">About</a>
         <a href="#services" style="--i: 2">Services</a>
         <a href="#Skills" style="--i: 3">Skill</a>
-        <a href="#" style="--i: 4">Project</a>
-        <a href="#" style="--i: 5">Contact</a>
+        <a href="#project" style="--i: 4">Project</a>
+        <a href="#contact" style="--i: 5">Contact</a>
       </div>
     </header>
     <section class="home">
@@ -62,7 +62,7 @@
         </div>
         <button onclick="showAlert()" class="button"><b>Contact Me</b></button>
       </div>
-      <div class="home-img "><img src="./img/avatar2.jpg" alt="" /></div>
+      <div class="home-img"><img src="./img/avatar2.jpg" alt="" /></div>
     </section>
 
     <section class="about" id="about">
@@ -91,7 +91,9 @@
             presence that aligns with their brand identity.
           </span>
         </p>
-        <button class="button2" onclick="showHide()"><b>More About Me</b></button>
+        <button class="button2" onclick="showHide()">
+          <b>More About Me</b>
+        </button>
       </div>
     </section>
     <div class="services" id="services">
@@ -200,7 +202,7 @@
           <div class="radial-bar">
             <svg x="0px" y="0px" viewBox="0 0 200 200">
               <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-              <circle class="path path-1 " cx="100" cy="100" r="80"></circle>
+              <circle class="path path-1" cx="100" cy="100" r="80"></circle>
             </svg>
             <div class="percentage">50%</div>
             <div class="text">Creativity</div>
@@ -211,7 +213,7 @@
               <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
               <circle class="path path-2" cx="100" cy="100" r="80"></circle>
             </svg>
-            <div class="percentage" >80%</div>
+            <div class="percentage">80%</div>
             <div class="text">Communication</div>
           </div>
           <!-- Problem Solving Skill -->
@@ -236,6 +238,114 @@
       </div>
     </section>
 
+    <!-- Project -->
+
+    <section>
+      <div class="main-text" id="project">
+        <div class="main-text" id="project">
+          <h2>Latest<span> Project</span></h2>
+          <div class="portfolio-content">
+            <div class="row">
+              <img src="./img/design.jpg" />
+              <div class="layer">
+                <h5>UI/UX Design</h5>
+                <p>
+                  UX/UI Design focuses on creating user-friendly, visually
+                  appealing interfaces that enhance the overall user experience.
+                  It ensures intuitive navigation and design consistency to meet
+                  user needs effectively.
+                </p>
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    style="color: #fff"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./img/webstie.jpg" />
+              <div class="layer">
+                <h5>Web Design</h5>
+                <p>
+                  Web design involves crafting visually engaging and functional
+                  websites. It combines layout, color schemes, typography, and
+                  interactive elements to ensure seamless user experiences and
+                  brand consistency.
+                </p>
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    style="color: #fff"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <div class="row">
+              <img src="./img/mobile.jpg" />
+              <div class="layer">
+                <h5>App Mobile</h5>
+                <p>
+                  Mobile app design centers on creating intuitive and responsive
+                  interfaces for smartphones. It emphasizes ease of use,
+                  touch-friendly navigation, and optimized layouts to enhance
+                  the mobile user experience.
+                </p>
+                <a href="#"
+                  ><i
+                    class="fa-solid fa-arrow-up-right-from-square"
+                    style="color: #fff"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-text">
+        <h2>Contact <span>Me</span></h2>
+        <h4>Let's Work Together</h4>
+        <p>
+          Contact me for collaboration or inquiries! I'm available to discuss UX/UI design, web development,
+           and mobile app projects. Let's create something amazing together!
+        </p>
+        <div class="contact-list">
+          <li><i class="fa-regular fa-paper-plane"></i> nhanhoan458@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> 0988954542</li>
+        </div>
+        <div class="contact-icons">
+          <a target="_blank" href="https://www.facebook.com/NguyenHoanNhan.Dev/"><i class="fa-brands fa-facebook-f"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/nh%E1%BA%ABn-nguy%E1%BB%85n-kh%E1%BA%A3i-ho%C3%A0n-941ba9325/"><i class="fa-brands fa-linkedin"></i></a>
+          <a target="_blank" href="https://github.com/hoannhan-fe"><i class="fa-brands fa-github"></i></a>
+          <a target="_blank" href="https://www.instagram.com/nguyenhoannhan.dev/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="text" placeholder="Enter Your Subject" />
+          <textarea
+            name=""
+            id=""
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="send" />
+        </form>
+      </div>
+    </section>
+    <div class="last-text">
+      <p>Developed with love by Nhẫn development © 2023</p>
+    </div>
+    <a href="#" class="top">
+      <i class="fa-solid fa-arrow-up" style="color: #000"></i>
+    </a>
     <script src="./main.js"></script>
   </body>
 </html>
