@@ -48,7 +48,7 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
-  cursor: pointer;
+  cursor: default;
   opacity: 0;
   animation: sliderRight 1s ease forwards;
 }
